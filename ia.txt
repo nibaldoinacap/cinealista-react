@@ -1,0 +1,64 @@
+# Registro de Uso de IA - Evaluación Sumativa U3
+
+## Etapa 1: Creación del proyecto y datos
+No usé IA en esta etapa, lo que si recibi ayuda del profe ya que tuve problemas raros con el comando del git init y el profe me sugirio que trabajase de la terminal de windows y asi hice. Creé el proyecto con Vite y el archivo de datos `peliculas.js` manualmente, ya que era una configuración inicial que ya conocía.
+
+---
+
+## Etapa 2: Componente PeliculaCard
+**Prompt 1:**
+"Hola, necesito crear el componente `PeliculaCard.jsx`. Puedes generarme la estructura básica del componente que reciba las props: titulo, genero, duracion, clasificacion, sinopsis y horarios? También crea un archivo `PeliculaCard.css` con algunos estilos básicos para que se vea como una tarjeta, y añade la validación de `PropTypes`."
+
+**Evaluación de la sugerencia:**
+La sugerencia fue muy útil. Me dio toda la estructura del componente JSX, el archivo CSS y la validación con PropTypes, lo que me ahorró mucho tiempo de escritura.
+
+**Modificaciones:**
+Añadí la lógica de la función `getClasificacionClass()` y las clases CSS específicas para cada clasificación (`.tag-te`, `.tag-14`, `.tag-18`) para cumplir con los requisitos de la evaluación, ya que la IA solo me dio una estructura general.
+
+---
+
+## Etapa 3: Componente ListaPeliculas
+**Prompt 1:**
+"Ahora necesito crear el componente `ListaPeliculas.jsx`. Debe recibir una prop 'peliculas' (que será un array) y usar `.map()` para renderizar un componente `PeliculaCard` por cada película en el array. Asegúrate de pasar todas las props necesarias y de usar la `key` correctamente. También, modifica `App.jsx` para que importe y use este nuevo componente."
+
+**Evaluación de la sugerencia:**
+La sugerencia fue útil y correcta. Me proporcionó el código para `ListaPeliculas` y me mostró cómo integrarlo en `App.jsx`, incluyendo el import.
+
+**Modificaciones:**
+No necesité hacer modificaciones importantes al código generado por la IA, ya que cumplía directamente con lo que pedía la etapa. Solo ajusté un poco el formato.
+
+---
+
+## Etapa 4: Estado y filtro seguro
+**Prompt 1:**
+"Vamos a añadir filtros. Necesito un nuevo componente `FiltroClasificacion.jsx` con botones para filtrar. En `App.jsx`, necesito usar `useState` para manejar el filtro de clasificación y un campo de búsqueda de texto. Luego, filtra el array de películas antes de pasarlo a `ListaPeliculas` y muestra un mensaje si no hay resultados. Genérame el código para los componentes y los estilos necesarios."
+
+**Evaluación de la sugerencia:**
+Fue muy útil. Me ayudó a estructurar la lógica del estado y el filtrado en `App.jsx`, que es la parte más compleja. También me generó el componente de los botones de filtro.
+
+**Modificaciones:**
+La IA me dio una buena base. Yo ajusté el `placeholder` del input de búsqueda y revisé la lógica de normalización (`.toLowerCase()`, `.trim()`) para asegurarme de que cumplía con las buenas prácticas de desarrollo seguro que pedía la evaluación.
+
+---
+
+## Etapa 5: Destacar funciones de hoy
+**Prompt 1:**
+"Última parte de código. Quiero resaltar las películas que tienen `funcionHoy: true`. Añade un estilo en el CSS de la tarjeta para esto. Luego, modifica `PeliculaCard.jsx` para que aplique ese estilo condicionalmente. Finalmente, en `App.jsx`, calcula y muestra un contador con el total de películas que se exhiben hoy."
+
+**Evaluación de la sugerencia:**
+La sugerencia fue útil. Me dio la idea de cómo aplicar una clase condicionalmente en React (`className={\`pelicula-card \${funcionHoy ? 'funcion-hoy' : ''}\`}`) y cómo calcular el total para el contador.
+
+**Modificaciones:**
+Yo mismo definí los estilos CSS exactos (el borde azul) y el texto del contador para que se ajustara mejor al diseño que tenía en mente.
+
+---
+
+## Parte A: Análisis de Elementos
+**Prompt 1:**
+"Terminé el código. Ahora debo completar una tabla de análisis sobre los elementos de React que usé. Puedes darme una breve explicación de para qué sirve cada uno de estos elementos en el contexto de mi proyecto: Componente, JSX, Props, Estado (useState), Renderizado de listas y Renderizado condicional?"
+
+**Evaluación de la sugerencia:**
+La sugerencia fue útil como guía. Me dio un resumen de cada concepto, lo que me ayudó a organizar mis ideas.
+
+**Modificaciones:**
+Usé las explicaciones de la IA como punto de partida, pero redacté todas las respuestas finales de la tabla y las preguntas con mis propias palabras y usando los ejemplos concretos de mi propio código, como me lo pedía la evaluación.
