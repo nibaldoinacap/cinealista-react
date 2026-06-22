@@ -14,6 +14,9 @@ function App() {
     return cumpleClasificacion && cumpleBusqueda;
   });
 
+  // Calcula el número de películas con función hoy
+  const peliculasHoyCount = peliculas.filter(p => p.funcionHoy).length;
+
   const handleBusquedaChange = (e) => {
     setBusqueda(e.target.value.slice(0, 50)); 
   };
@@ -21,6 +24,11 @@ function App() {
   return (
     <>
       <h1>CineLista React</h1>
+
+      {/* Muestra el contador de películas para hoy */}
+      <div className="contador-hoy">
+        Películas en cartelera hoy: <strong>{peliculasHoyCount}</strong>
+      </div>
 
       <div className="filtros-container">
         <FiltroClasificacion onFiltroChange={setFiltroClasificacion} />

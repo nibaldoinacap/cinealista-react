@@ -182,3 +182,21 @@
     border-right-color: var(--border);
   }
 }
+
+/* Estilos para la lista de películas */
+.lista-peliculas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contador-hoy {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #e7f3ff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}

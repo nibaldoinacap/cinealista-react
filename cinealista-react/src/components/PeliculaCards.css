@@ -32,3 +32,8 @@
 .tag-18 {
   background-color: #dc3545; /* Rojo */
 }
+
+/* Nuevo estilo para destacar funciones de hoy */
+.funcion-hoy {
+  border-bottom: 5px solid #007bff; /* Borde azul en la parte inferior */
+}
